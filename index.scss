@@ -1,0 +1,85 @@
+$h1-color: #ff8303;
+$h1-font: "Roboto", sans-serif;
+$border: 20px solid #4aa96c;
+$background-color: rgba(0, 0, 0, 0.425);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(https://images.unsplash.com/photo-1623861113682-76c0b73bbd6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80)
+    no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $h1-font;
+}
+.main-div {
+  width: 90%;
+  height: 40%;
+  background: $background-color;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .qoute {
+    color: rgb(0, 255, 221);
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  @media (min-width: 40rem) {
+    height: 70%;
+    justify-content: center;
+  }
+}
+.container {
+  width: 100%;
+
+  @media (min-width: 40rem) {
+    height: 60%;
+  }
+  display: flex;
+  .hour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (100%/4);
+  }
+  .minute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (100%/4);
+  }
+  .second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (100%/4);
+  }
+  .am {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: (100%/4);
+    h1 {
+      font-size: 3.5rem;
+      @media (min-width: 40rem) {
+        font-size: 10rem;
+      }
+    }
+  }
+  h1 {
+    font-size: 5rem;
+    color: $h1-color;
+    @media (min-width: 40rem) {
+      font-size: 14rem;
+    }
+  }
+}
